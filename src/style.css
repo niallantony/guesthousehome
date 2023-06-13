@@ -1,0 +1,80 @@
+@font-face {
+    font-family: korean-body;
+    src: url(./SongMyung-Regular.ttf);
+}
+
+@font-face {
+    font-family: korean-title;
+    src: url(./GowunBatang-Regular.ttf);
+}
+
+@font-face {
+    font-family: title;
+    src: url(./NanumMyeongjo-Regular.ttf);
+}
+
+.header {
+    height: 3rem;
+    background-color: var(--darker);
+    position:fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+:root {
+    --secondary: #EEFFD1;
+    --darker: #358F5E;
+    --main: #def0e8;
+    --accent: #CF9576;
+    --second-accent: #86D9FF;
+}
+
+body {
+    margin:0;
+}
+
+.container {
+    height: 100dvh;
+    background-color: var(--main);
+    position:relative;
+}
+
+.side-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter:brightness(80%);
+}
+
+.title { 
+    margin: auto;
+    text-align: center;
+    line-height: min(30vw,10rem);
+    font-size: min(20vw, 6rem);
+    color: white;
+    font-family: title,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title em{
+    position: absolute;
+    height:fit-content;
+    width:fit-content;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid white;
+}
+
+hr {
+    border: 1px solid white;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+}
+
+.korean {
+    font-family: korean-title, serif;
+}
