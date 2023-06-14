@@ -16,7 +16,8 @@
 #content {
     display:flex;
     flex-direction: column;
-    height: 100%;
+    height: max(auto,100%);
+    background-color: var(--light);
 }
 
 
@@ -34,12 +35,86 @@ html, body {
     height: 100%;
 }
 
+.info {
+    background-color: var(--light);
+    padding-top:2rem;
+    height:100%;
+    border-top: 1px solid var(--darker);
+    display: grid;
+    row-gap:1rem;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));   
+    max-height: fit-content;
+}
+ 
+.info div:first-of-type {
+    display:inline;
+    grid-column: 1 / 3 ;
+    grid-row: span 2;
+    object-fit: contain;
+    background: url('./our-story1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38rem;
+    filter: grayscale(50%);
+}
+
+.info div:nth-child(5) {
+    display:inline;
+    grid-column: 1 / -1;
+    grid-column-end: -1;
+    grid-row: span 2;
+    object-fit: contain;
+    background: url('./our-story2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38rem;
+    filter: grayscale(50%);
+}
+
+.info div:nth-child(8) {
+    display:inline;
+    grid-column: 1 / 2;
+    grid-row: span 2;
+    object-fit: contain;
+    background: url('./our-story3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38rem;
+    filter: grayscale(50%);
+}
+
+
+.info div:nth-child(6) {
+    grid-column: 1;
+}
+
+.info .subtitle {
+    font-family: title, 'Times New Roman', Times, serif;
+    color: var(--darker);
+    font-size: 3rem;
+    align-self: flex-end;
+    grid-column-end: -1;
+    border-bottom: 1px solid var(--darker);
+    padding: 0 2rem 1rem 2rem;
+    text-align: right;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    min-width: fit-content;
+}
+
+.info .text {
+    padding: 1rem;
+    color: var(--darker);
+    font-size: 1.1rem;
+    font-family: title, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .container {
     height: 100%;
     background-color: var(--main);
     background: url(./asset-1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
 }
@@ -120,4 +195,34 @@ li {
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media screen and (max-width:640px) {
+    .info div {
+        grid-column: 1/2;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .info div:nth-child(9) {
+        grid-column:2 / -1;
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width:1680px) {
+    .info div:nth-child(5) {
+        grid-column: span 4;
+        grid-column-end: -1;
+    }
+    .info div:nth-child(6) {
+        grid-row: 3;
+    }
+}
+@media screen and (min-width:1800px) {
+    .info div {
+        grid-column: span 2;
+    }
+
 }
