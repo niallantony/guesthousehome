@@ -20,6 +20,30 @@
     background-color: var(--light);
 }
 
+.our-story {
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+    border-right:1px solid var(--darker);
+}
+
+.sidebar em{
+    margin: 0 1rem 0 1rem;
+    position:sticky;
+    top:0;
+    margin:0;
+    font-family: title,'Times New Roman', Times, serif;
+    writing-mode: vertical-lr;
+    width: 3rem;
+    font-size: 3rem;
+    background-color: var(--light);
+    text-orientation: mixed;
+    color: var(--darker);
+    padding:3rem 1rem 0;
+    letter-spacing: .5rem;
+}
 
 :root {
     --secondary: #E5F5E5;
@@ -36,10 +60,10 @@ html, body {
 }
 
 .info {
+    flex:auto;
     background-color: var(--light);
     padding-top:2rem;
     height:100%;
-    border-top: 1px solid var(--darker);
     display: grid;
     row-gap:1rem;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));   
@@ -54,6 +78,7 @@ html, body {
     background: url('./our-story1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 38rem;
     filter: grayscale(50%);
 }
@@ -67,6 +92,7 @@ html, body {
     background: url('./our-story2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 38rem;
     filter: grayscale(50%);
 }
@@ -106,7 +132,12 @@ html, body {
     padding: 1rem;
     color: var(--darker);
     font-size: 1.1rem;
+    letter-spacing: .2rem;
     font-family: title, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info div:nth-child(7) {
+    grid-column: 1/ -1;
 }
 
 .container {
@@ -148,6 +179,10 @@ hr {
     margin: auto;
     padding: 0;
     width: 50%;
+}
+
+.header {
+    border-bottom:1px solid var(--darker);
 }
 
 .korean {
@@ -217,7 +252,7 @@ li {
         grid-column-end: -1;
     }
     .info div:nth-child(6) {
-        grid-row: 3;
+        grid-row: 4/span 2;
     }
 }
 @media screen and (min-width:1800px) {
