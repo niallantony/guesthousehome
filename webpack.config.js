@@ -2,9 +2,12 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     index: './src/index.js',
     initial: './src/initial.js',
+    header: './src/header.js',
+    ourstory: './src/ourstory.js',
   },
   module: {
     rules: [
@@ -14,6 +17,7 @@ module.exports = {
       },
     ],
   },
+  devtool: 'inline-source-map',
   plugins: [
     new HTMLWebpackPlugin({
       title: 'Guest House Home Page',
