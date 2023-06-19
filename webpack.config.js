@@ -8,6 +8,8 @@ module.exports = {
     initial: './src/initial.js',
     header: './src/header.js',
     ourstory: './src/ourstory.js',
+    enjoystay: './src/enjoystay.js',
+    explore: './src/explore.js',
   },
   module: {
     rules: [

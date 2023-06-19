@@ -22,7 +22,8 @@
 }
 
 .our-story ,
-.enjoy-stay {
+.enjoy-stay,
+.explore {
     display: flex;
     position: relative;
 }
@@ -87,7 +88,7 @@ html, body {
 }
 
 
-.cards div:nth-child(1) .picture {
+.enjoy-stay .cards div:nth-child(1) .picture {
     background: url('./enjoy-stay1.JPG');
     background-position: center;
     background-size: cover;
@@ -96,7 +97,7 @@ html, body {
     margin-bottom: 2rem;
     flex:0 0 auto;
 }
-.cards div:nth-child(2) .picture {
+.enjoy-stay .cards div:nth-child(2) .picture {
     background: url('./enjoy-stay2.JPG');
     background-position: bottom;
     background-size: cover;
@@ -105,7 +106,7 @@ html, body {
     margin-bottom: 2rem;
     flex:0 0 auto;
 }
-.cards div:nth-child(3) .picture {
+.enjoy-stay .cards div:nth-child(3) .picture {
     background: url('./enjoy-stay3.JPG');
     background-position: bottom;
     background-size: cover;
@@ -114,7 +115,7 @@ html, body {
     margin-bottom: 2rem;
     flex:0 0 auto;
 }
-.cards div:nth-child(4) .picture {
+.enjoy-stay .cards div:nth-child(4) .picture {
     background: url('./enjoy-stay4.JPG');
     background-position: bottom;
     background-size: cover;
@@ -123,7 +124,7 @@ html, body {
     margin-bottom: 2rem;
     flex:0 0 auto;
 }
-.cards div:nth-child(5) .picture {
+.enjoy-stay .cards div:nth-child(5) .picture {
     background: url('./enjoy-stay5.JPG');
     background-position: bottom;
     background-size: cover;
@@ -132,7 +133,7 @@ html, body {
     margin-bottom: 2rem;
     flex:0 0 auto;
 }
-.cards div:nth-child(6) .picture {
+.enjoy-stay .cards div:nth-child(6) .picture {
     background: url('./enjoy-stay6.JPG');
     background-position: bottom;
     background-size: cover;
@@ -141,7 +142,7 @@ html, body {
     margin-bottom: 2rem;
     flex:0 0 auto;
 }
-.cards div:nth-child(7) .picture {
+.enjoy-stay .cards div:nth-child(7) .picture {
     background: url('./enjoy-stay7.JPG');
     background-position: bottom;
     background-size: cover;
@@ -150,6 +151,52 @@ html, body {
     margin-bottom: 2rem;
     flex:0 0 auto;
 }
+.explore .cards div:nth-child(1) .picture {
+    background: url('./explore1.JPG');
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.explore .cards div:nth-child(2) .picture {
+    background: url('./explore2.JPG');
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.explore .cards div:nth-child(3) .picture {
+    background: url('./explore3.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.explore .cards div:nth-child(4) .picture {
+    background: url('./explore4.jpg');
+    background-position: top;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.explore .cards div:nth-child(5) .picture {
+    background: url('./explore5.jpg');
+    background-position: bottom;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+
 
 
 .info {
@@ -173,7 +220,6 @@ html, body {
     background-size: cover;
     background-position: center;
     height: 38rem;
-    filter: grayscale(50%);
 }
 
 .info div:nth-child(5) {
@@ -187,7 +233,6 @@ html, body {
     background-size: cover;
     background-position: center;
     height: 38rem;
-    filter: grayscale(50%);
 }
 
 .info div:nth-child(8) {
@@ -199,7 +244,6 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 38rem;
-    filter: grayscale(50%);
 }
 
 
