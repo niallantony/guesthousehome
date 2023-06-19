@@ -18,15 +18,19 @@
     flex-direction: column;
     height: 100%;
     background-color: var(--light);
+    min-width: 480px;
 }
 
-.our-story {
+.our-story ,
+.enjoy-stay {
     display: flex;
     position: relative;
 }
 
+
 .sidebar {
     border-right:1px solid var(--darker);
+    background-color: var(--light);
 }
 
 .sidebar em{
@@ -57,7 +61,96 @@
 html, body {
     margin:0;
     height: 100%;
+    background-color: var(--light);
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    flex:auto;
+    max-height: fit-content;
+
+}
+
+.card .subtitle {
+    text-align: left;
+    align-self: auto;
+}
+
+.card {
+    background-color: var(--light);
+    border-right:1px solid var(--darker);
+    border-bottom:1px solid var(--darker);
+    display:flex;
+    flex-direction: column;
+    max-height: fit-content;
+}
+
+
+.cards div:nth-child(1) .picture {
+    background: url('./enjoy-stay1.JPG');
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.cards div:nth-child(2) .picture {
+    background: url('./enjoy-stay2.JPG');
+    background-position: bottom;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.cards div:nth-child(3) .picture {
+    background: url('./enjoy-stay3.JPG');
+    background-position: bottom;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.cards div:nth-child(4) .picture {
+    background: url('./enjoy-stay4.JPG');
+    background-position: bottom;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.cards div:nth-child(5) .picture {
+    background: url('./enjoy-stay5.JPG');
+    background-position: bottom;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.cards div:nth-child(6) .picture {
+    background: url('./enjoy-stay6.JPG');
+    background-position: bottom;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+.cards div:nth-child(7) .picture {
+    background: url('./enjoy-stay7.JPG');
+    background-position: bottom;
+    background-size: cover;
+    object-fit: contain;
+    height: 400px;
+    margin-bottom: 2rem;
+    flex:0 0 auto;
+}
+
 
 .info {
     flex:auto;
@@ -114,7 +207,7 @@ html, body {
     grid-column: 1;
 }
 
-.info .subtitle {
+.subtitle {
     font-family: title, 'Times New Roman', Times, serif;
     color: var(--darker);
     font-size: 3rem;
@@ -128,7 +221,8 @@ html, body {
     min-width: fit-content;
 }
 
-.info .text {
+.info .text,
+.card .text {
     padding: 1rem;
     color: var(--darker);
     font-size: 1.1rem;

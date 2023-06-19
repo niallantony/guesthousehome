@@ -1,6 +1,6 @@
 import { ourStoryLoad } from "./ourstory.js";
-
-const makeHeader = () => {
+import { enjoyStayLoad } from "./enjoystay.js";
+function makeHeader() {
 
     const makeButton = (buttonId) => {
         const listItem = document.createElement('li');
@@ -21,6 +21,7 @@ const makeHeader = () => {
     exploreArea.textContent = 'Explore the Area';
 
     ourStory.addEventListener('click', ourStoryLoad );
+    enjoyStay.addEventListener('click', enjoyStayLoad );
 
     return {header};
 }

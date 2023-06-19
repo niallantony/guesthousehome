@@ -6,9 +6,6 @@ const initialLoad = () => {
 const content = document.getElementById('content');
 
 
-// ourStory.addEventListener('click', );
-// enjoyStay.addEventListener('click', );
-// exploreArea.addEventListener('click', );
 const header = makeHeader();
 const container = document.createElement('div');
 container.classList.add('container');
