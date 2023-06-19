@@ -1,4 +1,5 @@
 import { makeHeader } from "./header";
+import { initialLoad } from "./initial";
 
 function exploreLoad () {
 
@@ -18,6 +19,11 @@ function exploreLoad () {
     const cards = document.createElement('div');
     cards.classList.add('cards');
     explore.appendChild(cards);
+    sideBar.addEventListener('click', (e) => {
+        content.innerHTML = '';
+        initialLoad();
+    });
+
 
     const cardList = [
         {

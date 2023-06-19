@@ -1,4 +1,5 @@
 import { makeHeader } from "./header";
+import { initialLoad } from "./initial";
 
 function enjoyStayLoad () {
 
@@ -13,6 +14,11 @@ function enjoyStayLoad () {
     const sideBar = document.createElement('div');
     sideBar.classList.add('sidebar');
     sideBar.innerHTML = '<em>Ilhyun Cottage</em>';
+    sideBar.addEventListener('click', (e) => {
+        content.innerHTML = '';
+        initialLoad();
+    });
+
     enjoyStay.appendChild(sideBar);
 
     const cards = document.createElement('div');

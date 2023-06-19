@@ -1,4 +1,5 @@
 import {makeHeader} from './header.js';
+import { initialLoad } from './initial.js';
 
 const ourStoryLoad = () => {
     const content = document.getElementById('content');
@@ -12,7 +13,10 @@ const ourStoryLoad = () => {
     const sideBar = document.createElement('div');
     sideBar.classList.add('sidebar');
     sideBar.innerHTML = '<em>Ilhyun Cottage</em>';
-
+    sideBar.addEventListener('click', (e) => {
+        content.innerHTML = '';
+        initialLoad();
+    });
     const info = document.createElement('div');
     info.classList.add('info');
     const divOrder = [
